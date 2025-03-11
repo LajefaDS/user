@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": "0",
+      "barang": "Im Focus",
+      "stok": 15
+    },
+    {
+      "id": "1",
+      "barang": "Roll Kabel",
+      "stok": 14
+    },
+    {
+      "id": "2",
+      "barang": "Keyboard Sekolah",
+      "stok": 13
+    },
+    {
+      "id": "3",
+      "barang": "Kabel HDMI",
+      "stok": 14
+    }
+  ],
+  "database": [
+    {
+      "id": "cf65",
+      "nama": "Orang",
+      "kelas": "XII",
+      "namabarang": "Keyboard Sekolah",
+      "jumlahbarang": 1,
+      "tanggal": "08-03-2025, 18.01.18"
+    }
+  ],
+  "notifikasi": [],
+  "riwayat": []
+}
