@@ -5,7 +5,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-lg">
         <div class="container d-flex justify-content-center">
           <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="@/assets/Logo.png" alt="Logo PPBS" class="img-fluid me-2">
+            <img src="../../assets/Logo.png" alt="Logo PPBS" class="img-fluid me-2">
             <h1 class="d-none d-lg-block">School Borrowing and Returning</h1>
             <h1 class="d-lg-none">PPBS</h1>
           </a>
