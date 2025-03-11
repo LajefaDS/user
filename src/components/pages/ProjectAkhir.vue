@@ -77,7 +77,7 @@ export default {
           }
 
           try {
-              const response = await axios.get(`http://localhost:3000/database`);
+              const response = await axios.get(`https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/database`);
               this.projects = response.data.filter(project => project.nama === this.searchName);
           } catch (error) {
               console.error('Error:', error);
@@ -91,7 +91,7 @@ export default {
       },
       async loadReturnedItems() {
           try {
-              const response = await axios.get('http://localhost:3000/notifikasi');
+              const response = await axios.get('https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/notifikasi');
               this.returnedIds = new Set(response.data.map(item => item.id));
           } catch (error) {
               console.error('Error:', error);

@@ -74,7 +74,7 @@ export default {
   methods: {
     loadBarang() {
       const id = this.$route.params.id;
-      axios.get(`http://localhost:3000/users/${id}`)
+      axios.get(`https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/users/${id}`)
         .then(response => {
           this.selectedBarang = { ...response.data, jumlah: 1 };
         })
@@ -83,7 +83,7 @@ export default {
     startPolling() {
       this.pollingInterval = setInterval(() => {
         if (this.selectedBarang) {
-          axios.get(`http://localhost:3000/users/${this.selectedBarang.id}`)
+          axios.get(`https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/users/${this.selectedBarang.id}`)
             .then(response => {
               this.selectedBarang.stok = response.data.stok;
             })
@@ -134,9 +134,9 @@ export default {
       tanggal: this.form.tanggal // Waktu yang sudah diformat
     };
 
-    axios.post('http://localhost:3000/database', peminjaman)
+    axios.post('https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/database', peminjaman)
       .then(() => {
-        return axios.patch(`http://localhost:3000/users/${this.selectedBarang.id}`, {
+        return axios.patch(`https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/users/${this.selectedBarang.id}`, {
           stok: this.selectedBarang.stok - this.selectedBarang.jumlah
         });
       })
