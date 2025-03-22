@@ -77,7 +77,7 @@ export default {
     async loadData() {
       try {
         const { id } = this.$route.params;
-        const { data } = await axios.get(`https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/database/${id}`);
+        const { data } = await axios.get(`https://29b1ef8a-9650-4e93-aae4-c5dd204ed3f4-00-29uckvoxpfzx3.sisko.replit.dev/database/${id}`);
 
         this.id = data.id; // Simpan ID dari database
         this.nama = data.nama || "Tidak Diketahui";
@@ -111,7 +111,7 @@ export default {
         const { id } = this.$route.params;
 
         // Kirim data pengembalian ke API notifikasi dengan ID yang sama
-        await axios.post(`https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/notifikasi`, {
+        await axios.post(`https://29b1ef8a-9650-4e93-aae4-c5dd204ed3f4-00-29uckvoxpfzx3.sisko.replit.dev/notifikasi`, {
           id: this.id, // Menggunakan ID dari database
           nama: this.nama,
           kelas: this.kelas,
@@ -121,7 +121,7 @@ export default {
         });
 
         // Update status "kembali" di database
-        await axios.patch(`https://7a6bc215-6459-47b1-8792-ea59bd0c1918-00-30ru3bjcoagn1.sisko.replit.dev/database/${id}`, {
+        await axios.patch(`https://29b1ef8a-9650-4e93-aae4-c5dd204ed3f4-00-29uckvoxpfzx3.sisko.replit.dev/database/${id}`, {
           kembali: true
         });
 
